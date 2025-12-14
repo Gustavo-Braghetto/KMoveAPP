@@ -1,6 +1,6 @@
 # 📱 KMove – Gestão Financeira para Motoristas de Aplicativo
 
-O **KMove** é um aplicativo mobile desenvolvido com o objetivo de auxiliar motoristas de aplicativo no controle e na organização financeira de suas atividades diárias.
+O KMove é um aplicativo mobile desenvolvido com o objetivo de auxiliar motoristas de aplicativo no controle e na organização financeira de suas atividades diárias.
 
 O projeto foi criado no contexto do aprendizado acadêmico, aplicando conceitos de desenvolvimento de software para registrar ganhos e despesas, permitindo uma análise mais clara do desempenho financeiro do motorista.
 
@@ -38,4 +38,4 @@ O desenvolvimento do aplicativo seguiu boas práticas de Engenharia de Software,
 
 ---
 
-📌 *Este projeto possui caráter acadêmico e educacional.*
+📌 Este projeto possui caráter acadêmico e educacional.
