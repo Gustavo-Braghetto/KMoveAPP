@@ -1,0 +1,49 @@
+# 📱 KMove – Gestão Financeira para Motoristas de Aplicativo
+
+Este repositório contém o código desenvolvido para o aplicativo **KMove**, uma solução mobile projetada para auxiliar motoristas de aplicativo na gestão financeira de suas atividades diárias.
+
+O **KMove** permite que motoristas registrem e acompanhem seus ganhos e despesas, além de realizar cálculos automáticos para analisar o desempenho financeiro, como o lucro por quilômetro percorrido.
+
+## 📁 Organização do Repositório
+
+O repositório está estruturado em módulos, facilitando o entendimento do funcionamento do aplicativo:
+
+- **Cadastro de Corridas/**  
+  Implementações para registro e gerenciamento de corridas realizadas pelos motoristas.
+
+- **Despesas/**  
+  Registro de despesas operacionais, como combustível e manutenção do veículo.
+
+- **Cálculos/**  
+  Cálculos automáticos de lucro, como lucro por quilômetro percorrido e metas financeiras.
+
+- **Dashboard/**  
+  Interface para visualização de resultados e acompanhamento das finanças.
+
+- **Offline/**  
+  Funcionalidade para uso do aplicativo sem conexão com a internet.
+
+## 🎯 Objetivos do Projeto
+
+- Facilitar o controle financeiro dos motoristas de aplicativo  
+- Auxiliar no planejamento financeiro e definição de metas  
+- Proporcionar uma solução prática e acessível para o controle de lucros e despesas  
+- Oferecer um acompanhamento visual através de um dashboard intuitivo
+
+## 🛠️ Tecnologias Utilizadas
+
+- Android Studio  
+- Linguagem Java  
+- SQLite (banco de dados local)  
+
+## 📐 Metodologia de Desenvolvimento
+
+O desenvolvimento do KMove seguiu boas práticas de Engenharia de Software, incluindo:
+
+- Levantamento de requisitos funcionais e não funcionais  
+- Modelagem UML e definição de arquitetura do sistema  
+- Implementação de funcionalidades de forma modular e reutilizável
+
+---
+
+📌 *Este projeto foi desenvolvido com fins educacionais, como parte do processo de aprendizado e aplicação de conceitos de desenvolvimento de software.*
