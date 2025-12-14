@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perfil do Usuário"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:padding="12dp"
+            android:background="@drawable/borda_edittext"/>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="12dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/borda_edittext"/>
+
+        <EditText
+            android:id="@+id/editSenhaAtual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha atual (obrigatória)"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/borda_edittext"/>
+
+        <EditText
+            android:id="@+id/editSenhaNova"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nova senha (opcional)"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/borda_edittext"/>
+
+
+        <TextView
+            android:id="@+id/textTituloConsumo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consumo do Veículo:"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/editConsumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Consumo do veículo (km/L)"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/borda_edittext" />
+
+
+        <TextView
+            android:id="@+id/textMostrarTutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não sabe quanto seu veículo faz por km/L?"
+            android:textColor="#2f5972"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <LinearLayout
+            android:id="@+id/layoutTutorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Como descobrir o consumo real do seu veículo (km/L)"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para descobrir quantos quilômetros seu carro faz por litro de combustível, siga estes passos simples:\n\n1️⃣ **Abasteça o carro até o automático**\nVá a um posto de sua confiança e encha o tanque até que a bomba desligue automaticamente.\n\n2️⃣ **Anote o hodômetro inicial**\nRegistre a quilometragem exibida no hodômetro do seu carro antes de sair do posto.\n\n3️⃣ **Use o carro normalmente**\nDirija como faria no seu dia a dia, sem alterar seu estilo de direção.\n\n4️⃣ **Registre a quilometragem novamente**\nApós percorrer uma boa distância e gastar parte do combustível, anote a quilometragem.\n\n5️⃣ **Abasteça novamente**\nComplete o tanque e anote quantos litros foram necessários.\n\n6️⃣ **Calcule o consumo real**\nDivida a distância percorrida pelo número de litros abastecidos:\n   \uD83D\uDD22 Consumo (km/L) = Distância percorrida ÷ Litros abastecidos\n\n💡 **Dicas:**\n- Faça o teste em condições normais de trânsito.\n- Repita o teste algumas vezes e faça uma média para maior precisão."
+                android:textSize="15sp"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:ellipsize="none"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor da gasolina:"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/edtValorGasolina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 5.49"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@drawable/borda_edittext"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor do álcool:"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/edtValorAlcool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 3.79"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@drawable/borda_edittext"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor do diesel:"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/edtValorDiesel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex: 4.79"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@drawable/borda_edittext"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSalvarPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:textSize="18sp"
+            android:padding="14dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#2f5972"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:textSize="18sp"
+            android:padding="14dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#B0BEC5"
+            android:textColor="#000000"/>
+    </LinearLayout>
+</ScrollView>

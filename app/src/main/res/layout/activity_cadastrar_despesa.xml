@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Cadastrar Despesa"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/inputDescricaoDespesa"
+            android:hint="Descrição"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/inputValorDespesa"
+            android:hint="Valor"
+            android:inputType="numberDecimal"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Campo de data -->
+        <EditText
+            android:id="@+id/inputDataDespesa"
+            android:hint="Selecione a data"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@drawable/bg_input"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSalvarDespesa"
+            android:text="Salvar Despesa"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#002469"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelarDespesa"
+            android:text="Cancelar"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#2F5972"
+            app:cornerRadius="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

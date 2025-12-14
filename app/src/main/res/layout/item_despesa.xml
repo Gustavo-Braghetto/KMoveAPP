@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EAF0FF"
+    android:layout_marginBottom="12dp"
+    android:clipToOutline="true"
+    android:elevation="3dp"
+    android:layout_marginHorizontal="8dp"
+    android:backgroundTint="#EAF0FF"
+    android:clipToPadding="false">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txtDescricaoDespesaItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Descrição da despesa"
+            android:textColor="#2F5972"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtValorDespesaItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="R$ 0,00"
+            android:textColor="#002469"
+            android:textSize="16sp"
+            android:gravity="end"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtDataDespesaItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00/00/0000"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"/>
+</LinearLayout>

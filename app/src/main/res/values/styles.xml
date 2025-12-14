@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TEMA PRINCIPAL DO APP -->
+    <style name="Theme.App.Kmove" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Cores principais -->
+        <item name="colorPrimary">#002469</item>
+        <item name="colorSecondary">#2F5972</item>
+
+        <!-- Fundo das telas -->
+        <item name="android:windowBackground">@color/white</item>
+
+        <!-- Barra de status -->
+        <item name="android:statusBarColor">#002469</item>
+        <item name="android:navigationBarColor">#002469</item>
+
+        <!-- Cores de texto -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+
+        <!-- Estilo dos botões -->
+        <item name="materialButtonStyle">@style/Widget.Button.Kmove</item>
+
+        <!-- 🔥 AQUI É O QUE RESOLVE O BOTÃO DO ALERTDIALOG -->
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.AlertDialog</item>
+
+    </style>
+
+    <!-- Estilo dos botões do app -->
+    <style name="Widget.Button.Kmove" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">#002469</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- 🔥 ESTILO DO ALERTDIALOG (RESOLVE O TEXTO QUE NÃO APARECE) -->
+    <style name="ThemeOverlay.App.AlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/AlertDialog.Body</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/AlertDialog.Title</item>
+    </style>
+
+    <!-- Título do AlertDialog -->
+    <style name="AlertDialog.Title" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Corpo do AlertDialog -->
+    <style name="AlertDialog.Body" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <!-- Overlay para AlertDialog com botão OK branco -->
+    <style name="ThemeOverlay.MyAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialButtonStyle">@style/Widget.MyAlertDialogButton</item>
+    </style>
+
+    <style name="Widget.MyAlertDialogButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+</resources>

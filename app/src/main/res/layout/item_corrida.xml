@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F3E5F5"
+    android:padding="16dp"
+    android:elevation="3dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginHorizontal="8dp"
+    android:clipToOutline="true">
+
+    <TextView
+        android:id="@+id/txtOrigemDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Origem → Destino"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtValorCorrida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" R$ 0,00"
+        android:textColor="@color/roxo_primario"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/txtKmCorrida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 0 km"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_marginTop="2dp" />
+</LinearLayout>

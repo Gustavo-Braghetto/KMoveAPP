@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+
+            <ImageButton
+                android:id="@+id/btnPerfil"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:background="@android:color/transparent"
+                android:padding="4dp"
+                android:src="@drawable/ic_person"
+                app:tint="#002469" />
+
+
+            <TextView
+                android:id="@+id/txtBemVindoTopo"
+                android:text="Bem-vindo(a)!"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#002469"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSair"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:text="Sair"
+                android:backgroundTint="#F44336"
+                android:textColor="@android:color/white"
+                app:cornerRadius="12dp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginBottom="12dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTotalCorridas"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#002469">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Total de Corridas"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/txtTotalCorridas"
+                            android:text="0"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLucroTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#002469">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Lucro Total"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/txtLucroTotal"
+                            android:text="R$ 0,00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginBottom="12dp">
+
+                <!-- Despesas -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardDespesas"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#002469">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Despesas"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/txtDespesas"
+                            android:text="R$ 0,00"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Metas -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardMetas"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#002469">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Metas"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/txtMetas"
+                            android:text="0"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCadastrarCorrida"
+                android:text="Cadastrar Corrida"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#2f5972"
+                android:textColor="@android:color/white"
+                app:cornerRadius="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCadastrarDespesa"
+                android:text="Cadastrar Despesa"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#2f5972"
+                android:textColor="@android:color/white"
+                app:cornerRadius="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMetas"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="#2f5972"
+                android:text="Cadastrar Meta"
+                android:textColor="@android:color/white"
+                app:cornerRadius="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

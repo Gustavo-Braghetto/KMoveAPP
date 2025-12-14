@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suas Corridas"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#002469"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#E8EEF5"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="3dp"
+            android:clipToOutline="true"
+            android:layout_marginHorizontal="8dp">
+
+            <TextView
+                android:id="@+id/textSemCorridas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aqui serão exibidas todas as corridas cadastradas."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginBottom="10dp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerCorridas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerInfoCorrida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Informações"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="#1976D2"
+            android:textColor="@android:color/white"
+            app:cornerRadius="16dp"
+            android:elevation="4dp"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnExcluirCorrida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Excluir Corrida Selecionada"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="#D32F2F"
+            android:textColor="@android:color/white"
+            app:cornerRadius="16dp"
+            android:elevation="4dp"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVoltarCorridas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="#2F5972"
+            android:textColor="@android:color/white"
+            app:cornerRadius="16dp"
+            android:elevation="4dp"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

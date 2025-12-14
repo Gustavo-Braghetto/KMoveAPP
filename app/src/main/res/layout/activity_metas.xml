@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="0dp">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnExcluirMeta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Excluir Meta Selecionada"
+        android:backgroundTint="#D32F2F"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        android:layout_margin="16dp"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnExcluirMeta">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#EAF0FF"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/txtMetaAtual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meta atual: —"
+                    android:textColor="#002469"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtProgresso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Progresso: —"
+                    android:textColor="#2F5972"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerMetas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCadastrarMeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar Meta"
+                android:backgroundTint="#002469"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="12dp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnVoltarPrincipal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2F5972"
+                android:text="Voltar"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/txtTituloCadastrarCorrida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Corrida"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#002469"
+            android:gravity="center"
+            android:paddingBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/editOrigem"
+            android:hint="Origem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/editDestino"
+            android:hint="Destino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/editValor"
+            android:hint="Valor recebido (R$)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editKm"
+            android:hint="Quilômetros percorridos"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerCombustivel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:id="@+id/editPrecoCombustivel"
+            android:hint="Preço do combustível (R$)"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCadastrarCorrida"
+            android:text="Cadastrar Corrida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelar"
+            android:text="Cancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#2F5972" />
+
+    </LinearLayout>
+</ScrollView>

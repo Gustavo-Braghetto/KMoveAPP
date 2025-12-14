@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnExcluirDespesa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Excluir Despesa"
+        android:backgroundTint="#D32F2F"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:cornerRadius="12dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnExcluirDespesa">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suas Despesas"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#002469"
+                android:gravity="center"
+                android:paddingBottom="16dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#EAF0FF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="3dp"
+                android:clipToOutline="true"
+                android:layout_marginHorizontal="8dp">
+
+                <TextView
+                    android:id="@+id/textSemDespesas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aqui serão exibidas todas as despesas registradas."
+                    android:textColor="#2F5972"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DDDDDD"
+                    android:layout_marginBottom="10dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerDespesas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCadastrarDespesa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#002469"
+                    android:text="Cadastrar Despesa"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="12dp"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnVoltarDespesas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#2F5972"
+                    android:text="Voltar"
+                    android:textColor="@android:color/white"
+                    app:cornerRadius="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
