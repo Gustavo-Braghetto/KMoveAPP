@@ -5,23 +5,23 @@ Este repositório contém o código desenvolvido para o aplicativo **KMove**, um
 O **KMove** permite que motoristas registrem e acompanhem seus ganhos e despesas, além de realizar cálculos automáticos para analisar o desempenho financeiro, como o lucro por quilômetro percorrido.
 
 ## 📁 Organização do Repositório
+O repositório está organizado de acordo com a estrutura padrão de um projeto Android, facilitando a manutenção e o entendimento do código:
 
-O repositório está estruturado em módulos, facilitando o entendimento do funcionamento do aplicativo:
+- **activities/**
+Contém as Activities responsáveis pelas telas e interações do usuário.
 
-- **Cadastro de Corridas/**  
-  Implementações para registro e gerenciamento de corridas realizadas pelos motoristas.
+- **database/**
+Classes responsáveis pela criação e gerenciamento do banco de dados SQLite.
 
-- **Despesas/**  
-  Registro de despesas operacionais, como combustível e manutenção do veículo.
+- **models/**
+Classes de modelo que representam as entidades do sistema, como corridas e despesas.
 
-- **Cálculos/**  
-  Cálculos automáticos de lucro, como lucro por quilômetro percorrido e metas financeiras.
+- **adapters/**
+Adapters utilizados para exibição de dados em listas e componentes visuais.
 
-- **Dashboard/**  
-  Interface para visualização de resultados e acompanhamento das finanças.
+- **utils/**
+Classes auxiliares e funções de apoio utilizadas em diferentes partes do aplicativo.
 
-- **Offline/**  
-  Funcionalidade para uso do aplicativo sem conexão com a internet.
 
 ## 🎯 Objetivos do Projeto
 
